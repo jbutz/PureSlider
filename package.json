@@ -2,7 +2,7 @@
   "name": "pureslider",
   "version": "0.1.0",
   "description": "Light-weight and no-dependency javascript slider.",
-  "main": "./lib/pureslider.js",
+  "main": "./src/pureslider.js",
   "scripts": {
     "dev": "webpack -w",
     "dist": "webpack --config ./webpack.config.dist.js -p",
