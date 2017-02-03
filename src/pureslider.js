@@ -1,13 +1,15 @@
 class PureSlider {
   constructor({
     duration = 2000,
-    actionMode = 'fade'
+    actionMode = 'fade',
+    element = null
   } = {}){
     this.options = {
       duration,
-      actionMode
+      actionMode,
+      element
     }
-    this.el = document.querySelector('#pure-slider')
+    this.el = element || document.querySelector('#pure-slider')
     this.activeIndex = 0
     this.el.children[this.activeIndex].classList.add('active')
   }
